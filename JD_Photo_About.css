@@ -6,28 +6,16 @@ body{
 * {
     box-sizing: border-box;
 }
-.banner-content{
-    position: relative;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 32px;
-}
 
-.text-banner{
-    position: absolute;
-    color: white;
-    margin: 0;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-#navbar {
+.navbar {
     overflow: hidden;
     background-color: rgb(77, 75, 75);
+    position: fixed;
+    top: 0;
+    width: 100%;
   }
   
-  #navbar a {
+.navbar a {
     float: left;
     display: block;
     color: #f2f2f2;
@@ -35,31 +23,17 @@ body{
     padding: 14px 16px;
     text-decoration: none;
     font-size: 20px;
-  }
+ }
   
-  #navbar a:hover {
+ .navbar a:hover {
     background-color: #ddd;
     color: black;
-  }
+ }
   
-  #navbar a.active {
+ .navbar a.active {
     background-color:maroon;
     color: white;
-  }
-  
-  .content {
-    padding: 16px;
-  }
-  
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  
-  .sticky + .content {
-    padding-top: 60px;
-  }
+ }
 
 .title{
     text-align: center;
@@ -85,52 +59,38 @@ body{
       opacity: 0.7;
   }
 
-.row {
-    display: -ms-flexbox; /* IE10 */
-    display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
-    padding: 0 4px;
-}
-
-/* Create four equal columns that sits next to each other */
+/* Create two equal columns that floats next to each other */
 .column {
-    -ms-flex: 25%; /* IE10 */
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
+    float: left;
+    width: 45%;
+    padding: 10px;
+    height: 500px; 
+    margin: 1%;
+    text-align: justify;
 }
 
-.column img {
-    margin-top: 8px;
-    vertical-align: middle;
+.photo {
+    float: left;
+    width: 50%;
+    padding-top: 40px; 
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-    .column {
-        -ms-flex: 50%;
-        flex: 50%;
-        max-width: 50%;
-    }
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+.photo img {
+    margin-left: 30%;   
+    border-radius: 45%;   
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .column {
-        -ms-flex: 100%;
-        flex: 100%;
-        max-width: 100%;
+        width: 100%;
     }
 }
 
-@media (max-width: 500px) {
-    .testimonial {
-        text-align: center;
-    }
-    .testimonial img {
-        margin: auto;
-        float: none;
-        display: block;
-    }
-  }

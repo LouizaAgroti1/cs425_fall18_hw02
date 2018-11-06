@@ -3,32 +3,97 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>JD Phography</title>
+    <title>JD Phography - Contact</title>
     <meta name="author" content="Louiza Agroti"/>
     <meta name="description" content="JD_Photography for John Doe - About"/>
     <meta name="keywords" content="JD_Photography, John Doe, About" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="baseline_photo_camera_black_18dp.png" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="JD_Photo_About.css" />
- <!--   <script src="main.js"></script>  -->
+    <link rel="stylesheet" type="text/css" media="screen" href="JD_Photo_Contact.css" />
+ 
 </head>
 <body>
-    <div class="banner-content">
-        <img src="banner.jpg" alt="banner image" style="height: 95%; width: 100%; " >
-        <div class="text-banner">
-            <h1>JD Photography</h1>
-        </div>
-    </div>
-    
-    <div id="navbar">
+    <div class="navbar">
         <a href="JD_Photography.html">Home Page</a>
         <a href="JD_Photo_About.html">About</a>
         <a class="active" href="JD_Photo_Contact.html">Contact</a>
     </div>
 
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="info">
+      <h4>Studio's Address : 1 University Avenue, 2109 Aglantzia, Nicosia, CYPRUS</h4>
+      <h4>Working Hours : Monday-Friday: 09:00-18:00</h4>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="title">
+      <h2>Contact Form</h2>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">First Name : </label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Last Name : </label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="email">Email : </label>
+        </div>
+        <div class="col-75">
+            <input type="text" id="email" name="email" placeholder="Your email..">
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-25">
+            <label for="subject">Subject : </label>
+          </div>
+          <div class="col-75">
+              <input type="text" id="subject" name="subject" placeholder="Your message subject..">
+          </div>
+      </div>      
+      <div class="row">
+        <div class="col-25">
+          <label for="text">Text : </label>
+        </div>
+        <div class="col-75">
+          <textarea id="text" name="text" placeholder="Write something.." style="height:200px"></textarea>
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-25">
+            <label for="meeting">Meeting Date/Hour : </label>
+          </div>
+          <div class="col-75">
+              <input type="datetime-local" id="meeting" name="meeting">
+          </div>
+      </div>       
+      <div class="row">
+        <input type="submit" value="Submit">
+      </div>
+    </div>
+    
+
     <footer class="footer">
-        <h4>Find Us in Social Media</h4>
+        <h4>Find Me in Social Media</h4>
 
         <a href="#" class="fa fa-facebook-square" aria-hidden="true"></a>
         <a href="#" class="fa fa-twitter-square" aria-hidden="true"></a>
